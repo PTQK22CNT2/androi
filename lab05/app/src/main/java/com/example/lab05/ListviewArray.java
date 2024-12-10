@@ -46,4 +46,5 @@ public class ListviewArray extends AppCompatActivity {
                 android.R.layout.simple_list_item_1,arrMonhoc);
         lstMonhoc.setAdapter(adapter);
     }
-}
+}/*
+*/

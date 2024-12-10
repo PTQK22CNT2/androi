@@ -1,6 +1,7 @@
 package com.example.test;
 
 import android.os.Bundle;
+import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 
@@ -11,7 +12,9 @@ import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
 public class MainActivity extends AppCompatActivity {
-    EditText edtA,edtB,edtKQ;
+    EditText edtA;
+    EditText edtB;
+    EditText edtKQ;
     Button btnTinh;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -26,5 +29,17 @@ public class MainActivity extends AppCompatActivity {
         //Ánh xạ view
         edtA=findViewById(R.id.edtA);
         edtB=findViewById(R.id.edtB);
+        edtKQ=findViewById(R.id.edtKQ);
+        btnTinh=findViewById(R.id.btnTinh);
+        //thao tác cho người dùng
+        btnTinh.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                int a= Integer.parseInt(edtA.getText().toString());//lấy dữ liệu từ edt a,ép sang kiểu int
+                int b= Integer.parseInt(edtB.getText().toString());
+                int c= a+b;
+                edtKQ.setText(c+"");//gán c để hiêển thị kết qủa
+            }
+        });
     }
 }
