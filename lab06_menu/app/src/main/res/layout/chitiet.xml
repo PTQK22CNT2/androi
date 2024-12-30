@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/txtma"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Mã"
+        android:textSize="20dp" />
+
+    <EditText
+        android:id="@+id/edtma"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:inputType="textPersonName"/>
+    <TextView
+        android:id="@+id/txtten"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Tên"
+        android:textSize="20dp"/>
+    <EditText
+        android:id="@+id/edtten"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:inputType="textPersonName"/>
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <RadioButton
+            android:id="@+id/radnam"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nam"
+            android:textSize="20dp"/>
+        <RadioButton
+            android:id="@+id/radnu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nữ"
+            android:textSize="20dp"/>
+    </RadioGroup>
+    <Button
+        android:id="@+id/btnluu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Lưu nhân viên"
+
+        />
+</LinearLayout>

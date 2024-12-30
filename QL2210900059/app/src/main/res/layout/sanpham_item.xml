@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:text="ma san pham"
+        android:textSize="18dp"
+        android:id="@+id/txtMaSP59"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ten sản phẩm"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:textColor="#48B6AB"
+        android:textSize="18dp"
+        android:id="@+id/txtTenSP59"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/txtMaSP59"
+        app:layout_constraintStart_toStartOf="parent"
+        android:text="Số lượng: "
+        android:textSize="19dp"
+        android:id="@+id/sl"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/txtMaSP59"
+        app:layout_constraintStart_toEndOf="@+id/sl"
+        android:id="@+id/txtSL59"
+        android:textSize="19dp"
+        android:text="số sp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/txtMaSP59"
+        app:layout_constraintStart_toEndOf="@+id/txtSL59"
+        android:text="Đơn giá:"
+        android:id="@+id/dg"
+        android:layout_marginLeft="40dp"
+        android:textSize="19dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toEndOf="@+id/dg"
+        app:layout_constraintTop_toBottomOf="@+id/txtMaSP59"
+        android:text="giá"
+        android:id="@+id/txtDonGia59"
+        android:layout_marginLeft="10dp"
+        android:textSize="19dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/sl"
+        app:layout_constraintStart_toStartOf="parent"
+        android:id="@+id/thanhtien"
+        android:textSize="19dp"
+        android:text="Thành tiền: "/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtThanhTien59"
+        app:layout_constraintStart_toEndOf="@+id/thanhtien"
+        app:layout_constraintTop_toBottomOf="@+id/sl"
+        android:text="thành tiền"
+        android:textSize="19dp"
+        android:textColor="#0B8EF6"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toEndOf="@+id/txtThanhTien59"
+        app:layout_constraintTop_toBottomOf="@+id/sl"
+        android:text=" đ"
+        android:textSize="19dp"
+        android:textColor="#0B8EF6"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -54,7 +54,8 @@ public class activity_Chi_Tiet extends AppCompatActivity {
         edtMa=findViewById(R.id.edtMasp);
         edtTen=findViewById(R.id.edtTensp);
         edtGia=findViewById(R.id.edtGiasp);
-        btnXoa=findViewById(R.id.btnxoasp);btnThoat=findViewById(R.id.btntrove);
+        btnXoa=findViewById(R.id.btnxoasp);
+        btnThoat=findViewById(R.id.btntrove);
         intent=getIntent();
         sp= (sanpham)
                 intent.getSerializableExtra("SANPHAM");
